@@ -1,0 +1,65 @@
+{
+  "name": "opencode-style",
+  "version": "0.1.0",
+  "description": "OpenCode-style layout for Claude Code: barred prompts, icon tool rows, a session sidebar and plain spinner words, in Claude Code's own colours",
+  "author": { "name": "nenwam" },
+  "license": "MIT",
+  "keywords": ["mod", "ui", "sidebar", "opencode"],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "autoOpenSidebar": {
+      "type": "boolean",
+      "title": "Open the sidebar automatically",
+      "description": "Dock the session sidebar when the fullscreen layout starts. /sidebar shows or hides it either way.",
+      "default": true
+    },
+    "sessionTitles": {
+      "type": "boolean",
+      "title": "Name sessions with Haiku",
+      "description": "Title the sidebar with a short name Haiku writes from your first message: one small request per session. Off, the first line of the message is the title.",
+      "default": true
+    },
+    "showEmail": {
+      "type": "boolean",
+      "title": "Show the account email in the sidebar",
+      "description": "Off by default, so a shared or recorded screen doesn't show it.",
+      "default": false
+    },
+    "expandToolGroups": {
+      "type": "boolean",
+      "title": "List every tool call on its own row",
+      "description": "Off, runs of reads and searches stay folded into Claude Code's one-line summary.",
+      "default": true
+    },
+    "restyleMessages": {
+      "type": "boolean",
+      "title": "Restyle your messages and Claude's replies",
+      "description": "Your messages on a panel behind a coloured bar; replies indented without the bullet.",
+      "default": true
+    },
+    "restyleToolRows": {
+      "type": "boolean",
+      "title": "Draw tool calls as one-line rows",
+      "description": "OpenCode-style rows such as `→ Read src/index.ts` and `$ npm test`.",
+      "default": true
+    },
+    "turnFooter": {
+      "type": "boolean",
+      "title": "End each reply with the Built footer",
+      "description": "`▣ Built · model · 3.2s` in place of Claude Code's `Baked for 3s` line.",
+      "default": true
+    },
+    "plainSpinner": {
+      "type": "boolean",
+      "title": "Plain spinner words",
+      "description": "Thinking, Writing, Running and Preparing in place of the whimsical words.",
+      "default": true
+    },
+    "asciiIcons": {
+      "type": "boolean",
+      "title": "ASCII icons",
+      "description": "Plain characters in place of symbols such as ▣ ✱ ◈ ◉, for fonts that lack them.",
+      "default": false
+    }
+  }
+}

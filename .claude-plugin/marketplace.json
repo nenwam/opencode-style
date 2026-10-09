@@ -1,0 +1,12 @@
+{
+  "name": "opencode-style",
+  "owner": { "name": "nenwam" },
+  "description": "An OpenCode-style layout for the Claude Code terminal",
+  "plugins": [
+    {
+      "name": "opencode-style",
+      "source": "./",
+      "description": "OpenCode-style layout for Claude Code: barred prompts, icon tool rows, a session sidebar and plain spinner words, in Claude Code's own colours"
+    }
+  ]
+}
